@@ -11,17 +11,17 @@
 
 @interface RCTLinkingManager : RCTEventEmitter
 
-+ (BOOL)application:(UIApplication *)app
-            openURL:(NSURL *)URL
-            options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options;
++ (BOOL)application:(nullable UIApplication *)app
+            openURL:(nullable NSURL *)URL
+            options:(nullable NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options;
 
-+ (BOOL)application:(UIApplication *)application
-            openURL:(NSURL *)URL
-  sourceApplication:(NSString *)sourceApplication
-         annotation:(id)annotation;
++ (BOOL)application:(nullable UIApplication *)application
+            openURL:(nullable NSURL *)URL
+  sourceApplication:(nullable NSString *)sourceApplication
+         annotation:(nullable id)annotation;
 
-+ (BOOL)application:(UIApplication *)application
-continueUserActivity:(NSUserActivity *)userActivity
-  restorationHandler:(void (^)(NSArray * __nullable))restorationHandler;
++ (BOOL)application:(nullable UIApplication *)application
+continueUserActivity:(nullable NSUserActivity *)userActivity
+  restorationHandler:(nullable void (^)(NSArray * __nullable))restorationHandler;
 
 @end
